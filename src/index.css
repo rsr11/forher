@@ -1,0 +1,96 @@
+@import "tailwindcss";
+
+*{
+  font-family: 'Clash Grotesk', sans-serif;
+}
+
+body{
+  overflow: hidden;
+}
+
+@layer base{
+  li{
+    display: flex;  
+    justify-content: center ;
+    align-items: center;
+    position: absolute;
+    border-radius: 100%;
+    size: 64px;
+    background-color: black;
+    font-size: 2.25rem;
+    z-index: -10;
+    /* animation: fall 5s linear infinite; */
+  }
+
+  /* @keyframes fall {
+  0% {
+    transform: translateY(-100vh);
+    filter: blur(0);
+  }
+  100% {
+    transform: translateY(100vh);
+    filter: blur(10);
+  } */
+
+}
+
+
+
+
+
+
+@theme {
+   --color-pinky:#DB3C8A;
+   --color-whity:#FCE5DF;
+   --color-offwhite:#FFF8F6;
+   --color-greeny:#00522D;  
+   --animate-shake: shaking infinite ;
+
+   @keyframes shaking{
+    0%{
+      transform: rotate(0);
+    }
+    50%{
+      transform: rotate(-90deg);
+    }
+    100%{
+      transform: rotate(0);
+    }
+   }
+   /* --color-paper-gradient:background-image: linear-gradient(180deg, rgb(106,42,27), rgb(106,42,27) 10%, transparent calc(10% + 2px)),linear-gradient(90deg, transparent 0%, transparent 12%, rgb(245,196,146) 12%, rgb(245,196,146) calc(12% + 2px), transparent calc(12% + 2px), transparent calc(12% + 6px), rgb(245,196,146) calc(12% + 6px), rgb(245,196,146) calc(12% + 8px), transparent calc(12% + 8px), transparent 100%), linear-gradient(180deg, rgb(251,238,159) 22%, transparent 22%), repeating-linear-gradient(180deg, rgb(201,215,152) 0px, rgb(201,215,152) 2px, transparent 2px, transparent 36px), linear-gradient(rgb(251,238,159),rgb(251,238,159)); */
+}
+
+html{
+  cursor: url("images/heartIcon.png"), auto;
+}
+
+
+.pink-chess-bg{
+  background-image: repeating-linear-gradient(0deg, hsla(340,87%,75%,0.2) 0px, hsla(340,87%,75%,0.2) 30px,transparent 30px, transparent 60px),repeating-linear-gradient(90deg, hsla(340,87%,75%,0.2) 0px, hsla(340,87%,75%,0.2) 30px,transparent 30px, transparent 60px),linear-gradient(90deg, rgb(255,255,255),rgb(255,255,255));
+}
+
+.rainbow-shower{
+background-image: repeating-linear-gradient(220deg, rgb(0,0,0) 0px, rgb(0,0,0) 19px,transparent 19px, transparent 22px),repeating-linear-gradient(189deg, rgb(0,0,0) 0px, rgb(0,0,0) 19px,transparent 19px, transparent 22px),repeating-linear-gradient(148deg, rgb(0,0,0) 0px, rgb(0,0,0) 19px,transparent 19px, transparent 22px),linear-gradient(90deg, rgb(30, 169, 65),rgb(158, 25, 173));
+}
+
+.red-shower{
+  background-image: repeating-linear-gradient(216deg, rgb(0,0,0) 0px, rgb(0,0,0) 19px,transparent 19px, transparent 22px),repeating-linear-gradient(135deg, rgb(0,0,0) 0px, rgb(0,0,0) 19px,transparent 19px, transparent 22px),repeating-linear-gradient(338deg, rgb(0,0,0) 0px, rgb(0,0,0) 19px,transparent 19px, transparent 22px),linear-gradient(90deg, rgb(247, 125, 77),rgb(127, 74, 152));
+}
+
+.white-shower{
+  background-image: repeating-linear-gradient(216deg, rgb(0,0,0) 0px, rgb(0,0,0) 19px,transparent 19px, transparent 22px),repeating-linear-gradient(135deg, rgb(0,0,0) 0px, rgb(0,0,0) 19px,transparent 19px, transparent 22px),repeating-linear-gradient(338deg, rgb(0,0,0) 0px, rgb(0,0,0) 19px,transparent 19px, transparent 22px),linear-gradient(90deg, rgb(249, 249, 249),rgb(255, 255, 255));
+}
+
+.blue-shower{
+  background-image: repeating-linear-gradient(175deg, rgb(0,0,0) 0px, rgb(0,0,0) 31px,transparent 31px, transparent 35px),repeating-linear-gradient(125deg, rgb(0,0,0) 0px, rgb(0,0,0) 31px,transparent 31px, transparent 35px),repeating-linear-gradient(250deg, rgb(0,0,0) 0px, rgb(0,0,0) 31px,transparent 31px, transparent 35px),repeating-linear-gradient(106deg, rgb(0,0,0) 0px, rgb(0,0,0) 31px,transparent 31px, transparent 35px),linear-gradient(90deg, rgb(255, 255, 255),rgb(236, 235, 239));
+}
+
+.paper-bg{
+background-image: linear-gradient(90deg, transparent 0%, transparent 12%, rgb(243,197,147) 12%, rgb(243,197,147) calc(12% + 2px), transparent calc(12% + 2px), transparent calc(12% + 6px), rgb(243,197,147) calc(12% + 6px), rgb(243,197,147) calc(12% + 8px), transparent calc(12% + 8px), transparent 100%), linear-gradient(180deg, rgb(251,238,159) 12%, transparent 12%), repeating-linear-gradient(180deg, rgb(201,215,152) 0px, rgb(201,215,152) 2px, transparent 2px, transparent 32px), linear-gradient(rgb(251,238,159),rgb(251,238,159));
+/* background-size:400px 400px; */
+/* background-repeat: no-repeat; */
+}
+
+/* .shake{
+  animation: ;
+} */
