@@ -45,12 +45,12 @@ const LyricalVedio = () => {
 
      
      
-     <div className='absolute flex gap-5 bottom-0' >
+     {/* <div className='absolute flex gap-5 bottom-0' >
       <video src="https://res.cloudinary.com/dkfyjxlwf/video/upload/v1771822816/friends_ohpitb.mp4" className='w-30'></video>
-      <video src="https://res.cloudinary.com/dkfyjxlwf/video/upload/v1771822818/lookingfor_nciak7.mp4" autoPlay mute className='w-30'></video>
+      <video src="https://res.cloudinary.com/dkfyjxlwf/video/upload/v1771822818/lookingfor_nciak7.mp4" autoPlay mute className='w-30'></video> */}
       {/* <video src="https://res.cloudinary.com/dkfyjxlwf/video/upload/v1771822818/iwilltakecare_ro5lj9.mp4" className='w-30'></video> */}
-      <video src="https://res.cloudinary.com/dkfyjxlwf/video/upload/v1771822822/spidy_eqap9e.mp4" className='w-30'></video>
-     </div>
+      {/* <video src="https://res.cloudinary.com/dkfyjxlwf/video/upload/v1771822822/spidy_eqap9e.mp4" className='w-30'></video>
+     </div> */}
 
     </section>
 
