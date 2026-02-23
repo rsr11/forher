@@ -61,7 +61,7 @@ body{
 }
 
 html{
-  cursor: url("images/heartIcon.png"), auto;
+  cursor: url("/images/heartIcon.png"), auto;
 }
 
 

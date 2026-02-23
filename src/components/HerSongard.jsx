@@ -86,7 +86,6 @@ const HerSongard = () => {
   return (
     <section className='red-shower relative min-h-screen overflow-hidden w-screen'>
 
-
     <section className='relative top-20 left-20 w-[40%]' > {/* <h1>Hello</h1> */}
     <img src="images/SongCardBg.jfif"  className="absolute rounded-xl bg-blend-color inset-0 ml-0 w-full" alt="" />
     <div className='relative z-10 flex h-full w-full items-center justify-start p-10' >
@@ -101,7 +100,7 @@ const HerSongard = () => {
 
 
     
-    <section className='bg-[url(images/bgforPic4.png)] absolute flex flex-col items-center justify-end right-[32%] border-4 brder-blue-500 top-20 bg-cover bg-no-repeat w-80 h-100 rounded-xl'>
+    <section className="bg-[url('/images/bgforPic4.png')] absolute flex flex-col items-center justify-end right-[32%] border-4 brder-blue-500 top-20 bg-cover bg-no-repeat w-80 h-100 rounded-xl">
     <img src="images/herPic2.png" className='object-cover w-fit' alt="" />
 
     <div className='bg-red-0  bg-black w-full py-2' >
@@ -118,10 +117,11 @@ const HerSongard = () => {
     </div>
     </section>
 
-    <section className='bg-[url(images/bgforPic3.gif)] absolute flex flex-col items-center justify-end right-[10%] border-4 brder-blue-500 top-20 bg-cover bg-no-repeat w-72 h-100 rounded-xl' >
+    <section className="bg-[url('/images/bgforPic3.gif')] absolute flex flex-col items-center justify-end right-[10%] border-4 brder-blue-500 top-20 bg-cover bg-no-repeat w-72 h-100 rounded-xl" >
     <img src="images/herPic12.png" className='object-cover h-[70%] w-fit ' alt="" />
     <div className='bg-red-0  bg-black w-full py-2' >
         <div className='h-2 w-full p-[1px] rounded-lg bg-white'>
+
        <div style={{width:`${progress2}%`}} className={`bg-red-500 rounded-full h-1`} ></div> 
       </div>
 
