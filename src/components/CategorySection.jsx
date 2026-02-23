@@ -2,7 +2,6 @@ import { useGSAP } from '@gsap/react'
 import gsap from 'gsap'
 import { ScrollTrigger } from 'gsap/all';
 import React from 'react'
-import FirstVed from "../assets/vedio3.mp4";
 // import eyesOne from "../assets/herEyes1.jpeg";
 // import eyesTwo from "../assets/herEyes2.jpeg";
 

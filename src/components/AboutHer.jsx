@@ -1,15 +1,6 @@
 import React, { useRef } from 'react'
-// import HerImg11 from "../assets/herPic11.jpeg";
-// import HerImg5 from "../assets/herPic5.jpeg";
-// import HerImg6 from "../assets/herPic6.jpeg";
-// import HerImg4 from "../assets/herPic4.jpeg";
-// import herImg2 from "../assets/herPic2.jpeg";
-// import herImg22 from "../assets/herImg21.jpeg";
-import vedio from "../assets/vedio4.mp4";
-// import vedio2 from "../assets/songVedio.mp4";
 import { useGSAP } from '@gsap/react';
 import gsap from 'gsap';
-// import audioSong from "../assets/whereisShe.mp3"
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 
 
