@@ -11,6 +11,7 @@ import AboutHer from './components/AboutHer';
 import HerSongard from './components/HerSongard';
 import LyricalVedio from './components/LyricalVedio';
 import Letter from './components/Letter';
+import TheEnd from './components/TheEnd';
 
 function App() {
 
@@ -74,6 +75,7 @@ gsap.registerPlugin(ScrollTrigger);
     <HerSongard/>
     <LyricalVedio/>
     <Letter/>
+    <TheEnd/>
     </section>
   )
 }

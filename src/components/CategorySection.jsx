@@ -36,7 +36,7 @@ const CategorySection = () => {
             start: "top 90%",
             end:"top 40%",
             scrub:true,
-            markers:true,
+            // markers:true,
         },
         scale:"0",
         filter:"blur(20px)",

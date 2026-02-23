@@ -12,6 +12,7 @@ const Blank = () => {
 
   const sadVedioRef = useRef();
   const happyFaceRef = useRef();
+  const friendsRef = useRef();
   
 
 
@@ -40,9 +41,9 @@ const Blank = () => {
   // You're precious like a gehna, just ignore chaar logo ka kehna aur hamesha haste muskurate rehna..
   
   return (
-    <div className="white-shower relative h-screen flex justify-end w-screen" >
+    <div className="white-shower overflow-hidden relative h-screen flex justify-end w-screen" >
       
-      <div className="relative top-[20%] bg-ed-500 right-[25%] translate-x-[50%] h-fit w-80" >
+      <div className="relative top-[20%] bg-ed-500 right-[28%] translate-x-[50%] h-fit w-80" >
          <img src="images/paperpeice.png" className="w-60 z-0 rotate-12 absolute inset-0" alt="" />
          <p className="bg-hite text-3xl relative z-10 rotate-12 pt-4 p-8" >
           Tujhe ek baat batau! <br /> bol ha! <br /> 
@@ -53,7 +54,7 @@ const Blank = () => {
       </div>
       
        
-      <div className="relative bg-bue-400 top-[30%] right-[20%] translate-x-[50%] h-fit w-80" >
+      <div className="relative bg-bue-400 top-[30%] right-[10%] translate-x-[50%] h-fit w-80" >
          <img src="images/paperpeice.png" className="w-60 z-0 -rotate-12 absolute inset-0" alt="" />
          <p className="bg-hite text-3xl relative z-10 -rotate-12 pt-4 p-8" >
           Or ek or Baat, <br /> batau! <br /> 
@@ -61,6 +62,16 @@ const Blank = () => {
           <br />
          <span className="text-sm "> 🔼 (click me)</span> </p>
          <video ref={happyFaceRef}  src="https://res.cloudinary.com/dkfyjxlwf/video/upload/v1771822828/youhappy_kn8n2p.mp4" className="w-40 relative -right-34 -top-30 rounded-xl z-20"  muted ></video>
+      </div>
+
+       <div className="absolute bg-bue-400 -bottom-[10%] right-[40%] translate-x-[50%] h-fit w-80" >
+         <img src="images/paperpeice.png" className="w-60 z-0 -rotate-12 absolute inset-0" alt="" />
+         <p className="bg-hite text-3xl relative z-10 -rotate-12 pt-4 p-8" >
+          Kya Aap <br /> Dosti karoge ! <br /> 
+          <button onClick={()=>{playMusic(friendsRef.current)}} className="text-lg bg-white p-1 hover:bg-red-600 hover:text-white text-greeny" >Haa bol !</button>
+          <br />
+         <span className="text-sm "> 🔼 (click me)</span> </p>
+         <video ref={friendsRef}  src="https://res.cloudinary.com/dkfyjxlwf/video/upload/v1771861785/Untitled_design_1_cl5rs3.mp4" className="w-40 relative -right-34 -top-25 rounded-xl z-20"  muted ></video>
       </div>
 
       {/* <div className="relative bg-bue-400 top-[70%] right-[20%] translate-x-[50%] h-fit w-80" >

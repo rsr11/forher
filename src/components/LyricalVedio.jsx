@@ -4,6 +4,24 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import React, { useRef } from 'react'
 
 
+const vedioList = [
+  {name:"speech",
+    link:"https://res.cloudinary.com/dkfyjxlwf/video/upload/v1771822825/speech_dmybss.mp4"
+  },
+  {
+    name:"friends",
+    link:"https://res.cloudinary.com/dkfyjxlwf/video/upload/v1771822816/friends_ohpitb.mp4",
+  },
+  {
+    name:"iwilltakecare",
+    link:"https://res.cloudinary.com/dkfyjxlwf/video/upload/v1771822818/iwilltakecare_ro5lj9.mp4"
+  },
+  {
+    name:"spidy",
+    link:"https://res.cloudinary.com/dkfyjxlwf/video/upload/v1771822822/spidy_eqap9e.mp4"
+  }
+]
+
 const LyricalVedio = () => {
 
     // const lyricsRef = useRef();
@@ -11,23 +29,6 @@ const LyricalVedio = () => {
     const rightSideRef = useRef();
 
 
-    // gsap.registerPlugin(ScrollTrigger);
-   
-    // useGSAP(()=>{
-    //   gsap.from(rightSideRef.current,{
-    //     scrollTrigger:{
-    //        trigger:rightSideRef.current,
-    //        start:"start 50%",
-    //        end:"start start",
-    //        scrub:true
-    //     },
-    //     width:0,
-    //     height:0,
-    //     opacity:0,
-    //     border:0
-
-    //   })
-    // })
 
   const playSong=()=>{
     vedioRef.current.play();
@@ -41,13 +42,14 @@ const LyricalVedio = () => {
     <section className='w-[55%] relative flex gap-10 items-center justify-center h-screen'>
      <video ref={vedioRef} muted src="https://res.cloudinary.com/dkfyjxlwf/video/upload/v1771822825/speech_dmybss.mp4"  className='w-[60%] object-contain'></video>
      <button onClick={playSong} className='text-white cursor-pointer text-4xl' >Play ▶ </button>
-     
-     <div className='absolute hidden flex gap-5 bottom-0' >
-      <video src="https://res.cloudinary.com/dkfyjxlwf/video/upload/v1771822816/friends_ohpitb.mp4" className='w-30'></video>
-      <video src="https://res.cloudinary.com/dkfyjxlwf/video/upload/v1771822818/lookingfor_nciak7.mp4" className='w-30'></video>
-      <video src="https://res.cloudinary.com/dkfyjxlwf/video/upload/v1771822818/iwilltakecare_ro5lj9.mp4" className='w-30'></video>
-      <video src="https://res.cloudinary.com/dkfyjxlwf/video/upload/v1771822822/spidy_eqap9e.mp4" className='w-30'></video>
 
+     
+     
+     <div className='absolute flex gap-5 bottom-0' >
+      <video src="https://res.cloudinary.com/dkfyjxlwf/video/upload/v1771822816/friends_ohpitb.mp4" className='w-30'></video>
+      <video src="https://res.cloudinary.com/dkfyjxlwf/video/upload/v1771822818/lookingfor_nciak7.mp4" autoPlay mute className='w-30'></video>
+      {/* <video src="https://res.cloudinary.com/dkfyjxlwf/video/upload/v1771822818/iwilltakecare_ro5lj9.mp4" className='w-30'></video> */}
+      <video src="https://res.cloudinary.com/dkfyjxlwf/video/upload/v1771822822/spidy_eqap9e.mp4" className='w-30'></video>
      </div>
 
     </section>
@@ -90,6 +92,6 @@ export default LyricalVedio
 // a boy or bccha, i know how things works, how boys are, that all is to protect you, So understand that, try to understand what the context behind my lines, but i know you don't trust me.
 // at starting i know i am little bit cligy but not that clingy, and am asking you to tell me kidr ja rahe ho, ghr phuch ke msg kr dena, that just for to engage with you, and let know you ok. 
 // Life is not that essay and i want to be there in any problem to solve it, i don't want to see you in problems. If i ever go away, that will be my one of the Biggest regreat of my life.
-// if someting hurt me i tell you, so that you can understand me.I thing we share a good bond, becuz i do things for you, and you like that,sometime i feel i am close to you, but there is some special bond, 
+// if someting hurt me i tell you, so that you can understand me.I think we share a good bond, becuz i do things for you, and you like that,sometime i feel i am close to you, like there is some special bond, 
 // I told you , if someone is taking care of you, let me know, i will get it there is no place for me, and you told me ok, and then you put vivek in same as me. That's hurt, that mean you are also that much frank and feel comfortable with him. 
 // but i let it go.. thought you just don't want to push down his efforts.. but you pushed down me too. 
