@@ -40,7 +40,7 @@ const LyricalVedio = () => {
   return (
     <section className='h-screen lyrics flex w-screen overflow-hidden bg-black'>
     <section className='w-[55%] relative flex gap-10 items-center justify-center h-screen'>
-     <video ref={vedioRef} muted src="https://res.cloudinary.com/dkfyjxlwf/video/upload/v1771822822/spidy_eqap9e.mp4"  className='w-[60%] object-contain'></video>
+     <video ref={vedioRef} muted src="https://res.cloudinary.com/dkfyjxlwf/video/upload/v1771822825/speech_dmybss.mp4"  className='w-[60%] object-contain'></video>
      <button onClick={playSong} className='text-white cursor-pointer text-4xl' >Play ▶ </button>
 
      
