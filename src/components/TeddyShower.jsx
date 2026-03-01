@@ -201,7 +201,7 @@ export default function TeddyShower() {
         <h1 ref={headingRef} className='text-9xl font-bold text-white hero-title text-center'>
           YO, WHAT'S UP! <span className=''>TEDDY</span>
         </h1>
-        {/* {teddies.map((teddy, i) => (
+        {teddies.map((teddy, i) => (
           <li
             key={i}
             className="teddy absolute text-4xl"
@@ -212,7 +212,7 @@ export default function TeddyShower() {
           >
             🧸
           </li>
-        ))} */}
+        ))}
       </section>
 
       {/* Add CategorySection here */}
